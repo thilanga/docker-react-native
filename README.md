@@ -23,16 +23,16 @@ export PATH="$HOME/docker-react-native:$PATH"
 
 Initialize repository.
 ```
-> react-native.sh init MyAwesomeProjet
+> ./react-native.sh init MyAwesomeProjet
 ```
 (You can safey ignore errors from `npm`.)
 
 
 Connect to container and install missing packages
 ```
-> cd MyAwesomeProjet
-> react-native-container.sh
+> ./react-native-container.sh
 
+dev> cd MyAwesomeProject
 dev> cd node_modules/react-native/
 dev> yarn
 ```
@@ -43,7 +43,6 @@ Inside container:
 ```
 dev> adb reverse tcp:8081 tcp:8081 # you'll need android > 5.1 for this
 dev> react-native start > react-start.log 2>&1 &
-dev> react-native android
 dev> react-native run-android
 ```
 
