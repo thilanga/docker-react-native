@@ -8,7 +8,7 @@ This is a fork from [gilesp's react_native](https://github.com/gilesp/docker/tre
 
 Usual clone and image install:
 ```
-> git clone https://github.com/MaximeD/docker-react-native
+> git clone https://github.com/thilanga/docker-react-native
 > cd docker-react-native
 
 > docker build -t react-native .
@@ -19,14 +19,12 @@ Next you will need to have the two scripts available in your path. For example y
 export PATH="$HOME/docker-react-native:$PATH"
 ```
 
-## Create a new react native project
+## Create a project
 
-Initialize repository.
+create the project.
 ```
-> ./react-native.sh init MyAwesomeProjet
+> git clone https://github.com/thilanga/react-native-firebase MyAwesomeProject
 ```
-(You can safey ignore errors from `npm`.)
-
 
 Connect to container and install missing packages
 ```
